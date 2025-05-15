@@ -12,10 +12,10 @@ We have firstly done an EDA with data cleaning and visualization. After that we 
 
 Table for MAPE:
 
-Model / Approach              	MAPE (%)	                         Complexity
-Naive Hourly Average	            6.80	            Very low: Simple mean by hour, no dependencies, instant computation
-XGBoost (cross-building)	        6.94	            Moderate: Requires feature engineering (calendar, weather), fast training
-XGBoost Forecast	                2.69	              Moderate: Same as above, but with more granular aggregation
+|Model / Approach              |	MAPE (%)	  |                       Complexity                                             |
+|Naive Hourly Average	         |   6.80	      |      Very low: Simple mean by hour, no dependencies, instant computation     |
+XGBoost (cross-building)	        6.94	            Moderate: Requires feature engineering (calendar, weather), fast training|
+XGBoost Forecast	                2.69	              Moderate: Same as above, but with more granular aggregation            |
 with 6h Aggregation		                               Moderate: Requires data resampling, similar to above	
 XGBoost Forecast	                3.08	            Moderate: Same as above, but with different aggregation window
 with 12h Aggregation		                               Moderate: Requires data resampling, similar to above
