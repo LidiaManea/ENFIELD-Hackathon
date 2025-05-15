@@ -3,7 +3,7 @@
 Octavian Manea, Lidia Manea, Stefan Saraev, Vlad Florea
 
 Solutions are evaluated on prediction with the main metric being MAPE
-We have firtly done an EDA with data cleaning and visualization. After that we tried some baseline models:
+We have firstly done an EDA with data cleaning and visualization. After that we tried some baseline models:
 1) Naive Hourly Average: Predicts each hour using the average consumption for that hour from the known 2 months.
 2) Hourly + Weekend/Weekday Average: Improves baseline by splitting averages by hour and weekend/weekday.
 3) Prophet: Time series forecasting with daily, weekly, and yearly seasonality, trained on the 2 months of the new building.
