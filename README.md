@@ -12,13 +12,14 @@ We have firstly done an EDA with data cleaning and visualization. After that we 
 
 Table for MAPE:
 
-Model / Approach              	MAPE (%)	                         Complexity                                             
-Naive Hourly Average	            6.80	            Very low: Simple mean by hour, no dependencies, instant computation     
-XGBoost (cross-building)	        6.94	            Moderate: Requires feature engineering (calendar, weather), fast training
-XGBoost Forecast	                2.69	              Moderate: Same as above, but with more granular aggregation            
-with 6h Aggregation		                               Moderate: Requires data resampling, similar to above	
-XGBoost Forecast	                3.08	            Moderate: Same as above, but with different aggregation window
-with 12h Aggregation		                               Moderate: Requires data resampling, similar to above
-Prophet	                          12.73             	Low: Easy to use, handles seasonality, slower for large data
-MICN*	                            0.04	       High: Deep learning, needs GPU, pretraining and fine-tuning, complex pipeline
-TimesNet*                       	0.05	           High: SOTA deep learning, cross-building pretraining, GPUrecommended
+| Model / Approach         | MAPE (%) | Complexity                                                                       |
+|--------------------------|----------|----------------------------------------------------------------------------------|
+| Naive Hourly Average     | 6.80     | Very low: Simple mean by hour, no dependencies, instant computation              |
+| XGBoost (cross-building) | 6.94     | Moderate: Requires feature engineering (calendar, weather), fast training         |
+| XGBoost Forecast         | 2.69     | Moderate: Same as above, but with more granular aggregation                      |
+| with 6h Aggregation      |          | Moderate: Requires data resampling, similar to above                             |
+| XGBoost Forecast         | 3.08     | Moderate: Same as above, but with different aggregation window                   |
+| with 12h Aggregation     |          | Moderate: Requires data resampling, similar to above                             |
+| Prophet                  | 12.73    | Low: Easy to use, handles seasonality, slower for large data                     |
+| MICN*                    | 0.04     | High: Deep learning, needs GPU, pretraining and fine-tuning, complex pipeline    |
+| TimesNet*                | 0.05     | High: SOTA deep learning, cross-building pretraining, GPU recommended            |
